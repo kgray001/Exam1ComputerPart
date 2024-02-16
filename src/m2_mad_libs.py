@@ -75,6 +75,7 @@ def name():
 def main():
     print("Let's play Mad Libs!")
     name1 = name()
+    print(f"Welcome, {name1}!")
     noun1 = get_word(part_of_speech = "noun")
     verb = get_word(part_of_speech = "verb ending in -ing")
     adjective = get_word(part_of_speech = "adjective")
