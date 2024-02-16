@@ -64,7 +64,7 @@ def pay(total_hours, pay_rate):
     return float(total_hours * pay_rate)
 
 ###############################################################################
-# TODO: 4. (9 pts)
+# DONE: 4. (9 pts)
 #
 #   Now, let's put it all together.
 #
@@ -119,8 +119,6 @@ def main():
     totalh = float(calculate_hours(mon = hoursm, tues = hourstu, wed = hoursw, thurs = hourst, fri = hoursf))
     wage = float(input("How much are you currently paid per hour? "))
     totalpay = pay(total_hours = totalh, pay_rate = wage)
-    print(f"Monday: {hoursm} hour(s)\nTuesday: {hourstu} hour(s)\nWednesday: {hoursw} hour(s)\nThursday: {hourst} hour(s)\nFriday: {hoursf} hour(s)\nTotal Hours: {totalh} hour(s)\nPay Rate: ${wage} per hour\nTotal Pay: ${totalpay}")
-    # import decimal 
-    # value.quantize(decimal.Decimal('0.00'))
+    print(f"Monday: {hoursm} hour(s)\nTuesday: {hourstu} hour(s)\nWednesday: {hoursw} hour(s)\nThursday: {hourst} hour(s)\nFriday: {hoursf} hour(s)\nTotal Hours: {totalh} hour(s)\nPay Rate: ${wage:.2f} per hour\nTotal Pay: ${totalpay:.2f}")
 
 main()
